@@ -13,6 +13,13 @@
             browser.textContent='Hello Now'
             console.log(browser)
             document.getElementById('browser').append(' Hello my brother',browser)//appendChild(browser)
+            //document.getElementById('browser').appendChild(document.createElement('p').textContent='My heading 1')//error
+
+  const myPara = document.createElement('p');
+const textOfParagraph = document.createTextNode('I am the text for the paragraph!');
+
+myPara.appendChild(textOfParagraph);
+document.body.appendChild(myPara);
         </script>
 
     </div>
