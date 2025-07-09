@@ -9,7 +9,7 @@
     <div>
         <p id="browser">Hello Browser?</p>
         <script>
-            let browser=document.getElementById('browser');
+            let browser=document.getElementById('browser').outerHTML+='<br> <p>hhhhhhhhh</p>'//innerHTML//+=' Hello word';
             console.log(browser)
         </script>
 
