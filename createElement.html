@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+        <p id="browser">Hello Browser?</p>
+        <script>
+            let browser=document.createElement('p')
+            browser.textContent='Hello Now'
+            console.log(browser)
+            document.getElementById('browser').append(' Hello my brother',browser)//appendChild(browser)
+        </script>
+
+    </div>
+</body>
+</html>
