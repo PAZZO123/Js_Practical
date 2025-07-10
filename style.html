@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+        <p>Hello nadine</p>
+    </div>
+    <script>
+        const p=document.querySelector('p')
+        p.style.color='red'
+        const h1=document.createElement('h1')
+        const text=document.createTextNode('This is Heading')
+        h1.appendChild(text)
+        h1.style.color='blue'
+        h1.style.fontSize='19em'
+        h1.style.paddingLeft='40px'
+        document.body.appendChild(h1)
+        console.log(h1.style.paddingLeft)
+    </script>
+</body>
+</html>
