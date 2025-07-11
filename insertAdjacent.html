@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="id"><p>Hello my name</p></div>
+    <!---<p>Hello my name</p>--->
+    <script>
+        const elem=document.getElementById('id')
+        elem.insertAdjacentHTML('beforebegin','<p>Hello word before begin</p>')//previous sibling
+        elem.insertAdjacentHTML('afterbegin','<p>Hello word after begin</p>')//first child
+        elem.insertAdjacentHTML('afterend','<p>Hello word after end</p>')//next sibling
+        elem.insertAdjacentHTML('beforeend','<p>Hello word before end</p>')//last child
+        elem.style.color='red'
+    
+    </script>
+</body>
+</html>
