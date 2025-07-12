@@ -5,3 +5,4 @@ var findAll=(array, n) =>array.reduce((acc,num,idx)=>{
   return acc;
 },[])
 
+//test
