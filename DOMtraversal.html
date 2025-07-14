@@ -14,12 +14,13 @@
         var inp=document.querySelector('div')
         console.log(inp.childNodes)//Nodelist includes text
         console.log(inp.children)//ElementNodes //Html Collection
+        inp=inp.firstElementChild
        var  inps=document.querySelector('input').parentNode
         console.log(inps)//parent div
-        console.log(inp.firstElementChild)
-        console.log(inp.lastElementChild)
-        console.log(inps.previousSibling)
-        console.log(inps.nextSibling)
+        console.log(inps.firstElementChild)
+        console.log(inps.lastElementChild)
+        console.log(inp.previousSibling)
+        console.log(inp.nextElementSibling)
 
 
     </script>

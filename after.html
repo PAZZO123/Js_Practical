@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <ul>
+        <li>Home</li>
+        <li>About</li>
+    </ul>
+    <script>
+        const ul=document.querySelector('li')
+        const node=document.createElement('li')
+        node.textContent='Login'
+        ul.after(node)
+    </script>
+</body>
+</html>
