@@ -11,8 +11,13 @@
         <input id="m" type="text" value="" name="money" class='pazzo'  placeholder="hello namw">
         <script>
             let browsers=document.getElementById('m')//.className+=' middle'
-            console.log(browsers.attributes)//NamedNode
+            console.log(browsers.attributes)//NamedNodeMap
             document.writeln('Hell world')
+            console.log(browsers.getAttribute('id'))
+            browsers.setAttribute('name','title')
+            console.log(browsers.attributes)//NamedNodeMap
+            console.log(browsers.hasAttribute('name'))//true
+
         </script>
 
     </div>
