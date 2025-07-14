@@ -14,7 +14,8 @@
         const ul=document.querySelector('ul')
         const node=document.createElement('li')
         node.textContent='Login'
-        ul.after(node, 'Mile')//add after first li
+        ul.append(node, 'Mile')//add after first li
+        ul.prepend('First',' Second',' Third')
     </script>
 </body>
 </html>
