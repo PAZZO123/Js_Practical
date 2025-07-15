@@ -7,7 +7,8 @@
 </head>
 <body>
     <script>
-    
+        let to=performance.now()
+      var frag=document.createDocumentFragment()
         for(let i=1;i<=200;i++){
             var eventFn=function(event){
                 console.log('paragaph '+i+' Clicked')
@@ -15,10 +16,13 @@
             }
             let v=document.createElement('p')
             v.textContent='This is the paragraph Number'+i
-            document.body.appendChild(v)
+            frag.appendChild(v)
             //console.log(i+'Done')
             v.addEventListener('click',eventFn)
         }
+        document.body.appendChild(frag)
+        let t =performance.now();
+        console.log((t-to)+' millisecond')
 
     </script>
 </body>
