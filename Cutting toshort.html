@@ -7,6 +7,7 @@
 </head>
 <body>
    <script>
+    let to=performance.now();
     let count =1
     function createH(){
     let fragment=document.createDocumentFragment()
@@ -16,11 +17,13 @@
         fragment.appendChild(p)
         count++
     }document.body.appendChild(fragment)
-    if(count<2000)
+    if(count<20000)
     {
         setTimeout(createH,0)
     }}
     createH()
+    let t =performance.now();
+        console.log((t-to)+' millisecond')
 
    </script> 
 </body>
