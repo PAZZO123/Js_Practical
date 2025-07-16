@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+       const p= document.createElement('h1')
+       p.innerText='This text gona change to Color'
+       document.body.appendChild(p)
+       setTimeout(function change(){
+        p.style.color='blue'
+       },1000)
+       setTimeout(function change(){
+        p.style.color='red'
+       },2000)
+       setTimeout(function change(){
+        p.style.color='green'
+       },3000)
+       setTimeout(function change(){
+        p.style.color='yellow'
+       },4000)
+    </script>
+</body>
+</html>
