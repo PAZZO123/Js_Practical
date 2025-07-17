@@ -18,10 +18,11 @@
         const span=document.getElementById('span')
         const btn=document.getElementById('btn')
         const body=document.getElementsByTagName('body')[0]
+        const a=document.querySelector('a')
         div.style.backgroundColor='blue'
          div.style.padding='50px'
-        span.style.backgroundColor='red'
-         span.style.padding='20px'
+        a.style.backgroundColor='red'
+         a.style.padding='20px'
         body.style.backgroundColor='yellow'
         body.addEventListener('click',()=>console.log('Body was clicked'),true) //body come first
          div.addEventListener('click',()=>console.log('Div was clicked'))
