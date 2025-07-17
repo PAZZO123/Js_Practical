@@ -26,13 +26,13 @@
         body.style.backgroundColor='yellow'
         body.addEventListener('click',()=>console.log('Body was clicked'),true) //body come first
          div.addEventListener('click',()=>console.log('Div was clicked'))
-          span.addEventListener('click',()=>console.log('Span was clicked'))
+          a.addEventListener('click',(evt)=>{
+            evt.preventDefault() //now the default like href and form sub are prevented
+
+          })
         btn.addEventListener('click',()=>console.log('Button was clicked'))
 
-        //the 
-        btn.addEventListener('click',(event)=>{
-            event.stopPropagation() //then this will stops oll then events in bubbling phase
-        })
+     
    
     </script>  
 </body>
