@@ -22,15 +22,19 @@
         span.style.backgroundColor='red'
          span.style.padding='20px'
         body.style.backgroundColor='yellow'
-        body.addEventListener('click',()=>console.log('Body was clicked'),true) //body come first
-         div.addEventListener('click',()=>console.log('Div was clicked'))
-          span.addEventListener('click',()=>console.log('Span was clicked'))
-        btn.addEventListener('click',()=>console.log('Button was clicked'))
-
+        //body.addEventListener('click',()=>console.log('Body was clicked'),true) //body come first
+         div.addEventListener('click',(evt)=>{
+            if(evt.target==='SPAN'){
+                console.log('span was Clicked first')
+            }
+            else if(evt.target==='BUTTON')
+            {
+                console.log(evt.target+' was clicke!')
+            }
+         })
+      
         //the 
-        btn.addEventListener('click',(event)=>{
-            event.stopPropagation() //then this will stops oll then events in bubbling phase
-        })
+   
    
     </script>  
 </body>
