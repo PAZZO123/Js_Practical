@@ -28,6 +28,9 @@
         btn.addEventListener('click',()=>console.log('Button was clicked'))
 
         //the 
+        btn.addEventListener('click',(event)=>{
+            event.stopPropagation()
+        })
    
     </script>  
 </body>
