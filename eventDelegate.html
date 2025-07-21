@@ -26,7 +26,7 @@
          div.addEventListener('click',function(evt){
             console.log('Div was clicked!')
             if(evt.target.nodeName==='SPAN'){
-                console.log('span was Clicked first')
+                console.log(evt.currentTarget.nodeName+' was Clicked first')
             }
             else if(evt.target.nodeName==='BUTTON')
             {
